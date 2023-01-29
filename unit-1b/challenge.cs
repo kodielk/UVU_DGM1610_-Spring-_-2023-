@@ -10,6 +10,7 @@ public class Program
 		gokuStatus = new GokuStatus();
 		gokuStatus.currentState = GokuStatus.Status.NotYelling;
 		gokuStatus.CheckState();
+		gokuStatus.CheckPowerlevel(powerLevel);
 	}
 }
 
@@ -33,6 +34,16 @@ public class GokuStatus{
 				break;
 		}
 	}
-
+	public void CheckPowerlevel(int powerLevel)
+	{
+		if (powerLevel > 9000)
+		{
+			Console.WriteLine("His power level... It's over 9000! There's no way that can be right!");
+		}
+		else
+		{
+			Console.WriteLine("Pfft. What a wimp.");
+		}
+	}
 }
 
