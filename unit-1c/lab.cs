@@ -4,6 +4,7 @@ public class Program
 {
 	public static void Main()
 	{
-		string[] cars = {"Mustang", "Camero", "Hellcat"};
+		string[] champions = {"Swain", "Galio", "Annie"};
+		Console.WriteLine(champions[0]);
 	}
 }
