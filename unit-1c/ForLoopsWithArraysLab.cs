@@ -4,13 +4,24 @@ public class Program
 {
 	public static void Main()
 	{
-		string[] playerTypes = {"Pawn", "Pawn", "Pawn",};
-		for (var i = 0; i < playerTypes.Length; i++){
-			playerTypes[i] = "Rook";
+		weapon[] weaponsObjs = {new weapon(), new weapon()};
+		weaponsObjs[1].weaponName = "Sword";
+		
+		for(var i=0; i<weaponsObjs.Length; i++) {
+			weaponsObjs[i].powerLevel = 0;
+			
 		}
 		
-		foreach(var playerType in playerTypes) {
-			Console.WriteLine(playerType);
+		foreach(var item in weaponsObjs){
+			Console.WriteLine(item.weaponName);
+			Console.WriteLine(item.powerLevel);
+			
+		
 		}
 	}
+}
+
+public class weapon {
+	public string weaponName = "Axe";
+	public int powerLevel = 1;
 }
