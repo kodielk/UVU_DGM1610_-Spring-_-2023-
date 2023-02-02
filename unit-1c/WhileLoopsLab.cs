@@ -1,6 +1,5 @@
 using System;
 
-namespace MyApplication
 {
   public class Program
   {
