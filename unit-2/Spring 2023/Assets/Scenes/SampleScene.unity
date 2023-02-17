@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 1343463030}
   - component: {fileID: 1343463029}
   - component: {fileID: 1343463033}
+  - component: {fileID: 1343463034}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -411,3 +412,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788e4065c68d548429c42d278f04ae65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1343463034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343463028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452b1e1e13fa4b7409fa682f0ccd1637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openingVoice: My quiver is never full.
+  arrowDmg: 0
