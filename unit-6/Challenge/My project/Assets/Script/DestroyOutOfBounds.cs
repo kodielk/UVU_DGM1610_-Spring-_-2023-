@@ -27,9 +27,4 @@ public class DestroyOutOfBounds : MonoBehaviour
             //Time.timeScale = 0;
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
 }
