@@ -24,7 +24,7 @@ public class DestroyOutOfBounds : MonoBehaviour
         {
             Debug.Log("lol u died");
             Destroy(gameObject);
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
         }
     }
 
