@@ -22,7 +22,7 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
         else if (transform.position.z < lowerBounds)
         {
-            Debug.Log("lol u died");
+            Debug.Log("Gold clatters on the floor.");
             Destroy(gameObject);
             //Time.timeScale = 0;
         }

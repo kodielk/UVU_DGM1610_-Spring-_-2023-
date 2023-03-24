@@ -300,8 +300,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -325,7 +325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 24.5, z: 0}
+  m_LocalPosition: {x: 0, y: 24.5, z: -2.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -365,8 +365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  speed: 10
-  xRange: 30
+  speed: 50
+  xRange: 21
   blaster: {fileID: 467097060}
   laserBolt: {fileID: 2531997640114128316, guid: 755ef0613c58c1944b25c1810307460e, type: 3}
 --- !u!65 &1317734102
@@ -440,7 +440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317734100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.07, z: -10}
+  m_LocalPosition: {x: 0, y: 1.77, z: -10}
   m_LocalScale: {x: 1.3, y: -0.6, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -481,7 +481,6 @@ MonoBehaviour:
   - {fileID: 5478004959301533706, guid: 12ecce07d681f2d4e93f747efaf1f37c, type: 3}
   - {fileID: 635033132991469674, guid: 2f351da7b4f23dc479a13eb2872a546b, type: 3}
   - {fileID: 2170708549421889398, guid: 2dbc57e410ee9ea449709c9fcb8df535, type: 3}
-  ufoIndex: 2
 --- !u!4 &1384850097
 Transform:
   m_ObjectHideFlags: 0
@@ -490,7 +489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384850095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.19, y: 0.9100001, z: 7.97}
+  m_LocalPosition: {x: -0.19, y: 1.78, z: 7.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -525,7 +524,7 @@ MeshCollider:
   m_GameObject: {fileID: 2050265755}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30

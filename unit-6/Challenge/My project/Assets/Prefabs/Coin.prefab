@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 392913400274274995}
   - component: {fileID: 4963389352228313315}
   - component: {fileID: -819210646739532995}
+  - component: {fileID: 5772515688926445713}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -65,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 569cda165231a884cb36755b575422ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -154,3 +155,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  dataObj: {fileID: 11400000, guid: bf677ab29849bf94da83872f201a7ee1, type: 2}
+--- !u!54 &5772515688926445713
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6140497780398535163}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
