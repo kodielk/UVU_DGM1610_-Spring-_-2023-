@@ -6,7 +6,7 @@ public class EnemySpawnManager : MonoBehaviour
 {
 
     public GameObject[] ufoPrefabs; //Array to store UFO ships (shows up in unity)
-    private float spawnRangeX = 20f;
+    private float spawnRangeX = 17f;
     private float spawnPosZ = 20f;
     private float startDelay = 2f;
     private float spawnInterval = 2.5f;

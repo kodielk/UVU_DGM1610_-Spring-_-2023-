@@ -9,9 +9,15 @@ public class PlayerController : MonoBehaviour
     public float xRange;
     public Transform blaster;
     public GameObject laserBolt;
-    
-   
-    // Update is called once per frame
+    public GameManager gameManager;
+
+
+    void Start()
+    {
+        //                            GameObject                   Script Component 
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //Reference GameManager Script on GameManager object
+    }
+
     void Update()
     {
         // Set HorizontalInput to get values from keyboard
@@ -32,7 +38,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
         //space bar press fire bolt
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false) // Second Condition gameManager.isGameOver prevents the player from shooting after isGameOver becomes true
         {
             //creates laser bolt @ blaster position
             Instantiate(laserBolt, blaster.transform.position, laserBolt.transform.rotation);
@@ -41,7 +47,9 @@ public class PlayerController : MonoBehaviour
     //Delete any object with a trigger that hits the player
     private void OnTriggerEnter(Collider other)
     {
+        gameManager.isGameOver = true;
         Destroy(other.gameObject);
-            
+        Time.timeScale = 0;
+
     }
 }

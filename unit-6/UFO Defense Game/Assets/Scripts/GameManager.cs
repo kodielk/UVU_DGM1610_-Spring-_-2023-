@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale == 0)
+        {
+            isGameOver = true;
+        }
         if (isGameOver)
         {
             EndGame(); // Start EndGame method
@@ -32,6 +36,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndGame()
     {
+        Debug.Log("The world ends.");
         gameOverText.gameObject.SetActive(true);
         Time.timeScale = 0; // Freeze Time
     }
