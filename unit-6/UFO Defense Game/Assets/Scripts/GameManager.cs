@@ -5,8 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool isGameOver;
-
+    public AudioSource endSound;
     private GameObject gameOverText;
+    private bool hasPlayedEndSound = false; // New boolean variable to check if end sound has played
 
     void Awake()
     {
@@ -23,8 +24,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale == 0)
+        if (Time.timeScale == 0 && !hasPlayedEndSound) // Check if time is frozen and sound has not played
         {
+            endSound.Play();
+            hasPlayedEndSound = true; // Update the boolean variable
             isGameOver = true;
         }
         if (isGameOver)

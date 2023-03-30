@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float xRange;
     public Transform blaster;
     public GameObject laserBolt;
+    public AudioSource clip;
     public GameManager gameManager;
 
 
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         //space bar press fire bolt
         if (Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false) // Second Condition gameManager.isGameOver prevents the player from shooting after isGameOver becomes true
         {
+            clip.Play(); //plays laser sound
             //creates laser bolt @ blaster position
             Instantiate(laserBolt, blaster.transform.position, laserBolt.transform.rotation);
         }
