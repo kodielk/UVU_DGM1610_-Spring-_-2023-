@@ -1,14 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteBehaviour : MonoBehaviour
 {
     private SpriteRenderer rendererObj;
-
-    private void Start()
+    void Start()
     {
         rendererObj = GetComponent<SpriteRenderer>();
     }
@@ -17,4 +14,5 @@ public class SpriteBehaviour : MonoBehaviour
     {
         rendererObj.color = obj.value;
     }
+
 }
