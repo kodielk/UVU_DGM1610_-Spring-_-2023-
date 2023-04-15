@@ -241,7 +241,7 @@ MonoBehaviour:
       m_Calls: []
   canRun: 0
   counterNum: {fileID: 11400000, guid: c1068e7a7e4442642828928c947d42d8, type: 2}
-  seconds: 1
+  seconds: 0.5
 --- !u!4 &448903224
 Transform:
   m_ObjectHideFlags: 0

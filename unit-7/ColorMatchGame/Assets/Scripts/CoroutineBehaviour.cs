@@ -24,6 +24,7 @@ public class CoroutineBehaviour : MonoBehaviour
     public void StartCounting()
     {
         StartCoroutine(Counting());
+        Debug.Log("Love!");
     }
 
     private IEnumerator Counting()

@@ -15,10 +15,12 @@ public class MatchBehaviour : MonoBehaviour
             yield break;
         
         
+        
         var otherID = tempObj.idObj;
         if (otherID == idObj)
         {
             matchEvent.Invoke();
+            Debug.Log("A match!");
         }
         else
         {
